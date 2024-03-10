@@ -8,17 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        // tab bar with view items
+        TabView() {
+            InfoView()
+                .tabItem {
+                    Label("SwiftUI", systemImage: "swift")
+                }
+            
+            HelloView()
+                .tabItem {
+                    Label("Hello world", systemImage: "pencil.tip")
+                }
+            
+            SettingsView()
+                .tabItem {
+                    Label("Settings", systemImage: "menucard")
+                }
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
+        .environment(ColorTheme())
 }

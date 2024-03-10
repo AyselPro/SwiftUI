@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct NavigationPostApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            InfoView()
         }
+        .modelContainer(DataController.container())
     }
 }

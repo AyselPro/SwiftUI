@@ -1,0 +1,31 @@
+//
+//  CoursePart.swift
+//  NavigationPost
+//
+//  Created by Aysel on 08.03.2024.
+//
+
+
+import Foundation
+import SwiftData
+
+@Model
+class CoursePart {
+    let id: String
+    var title: String
+    var passed: Bool
+    var date: Date?
+    var count: Int
+    var wrong: Int
+    @Relationship(deleteRule: .cascade) var cells = [CourseCell]()
+
+    init(id: String, title: String, count: Int, passed: Bool = false, date: Date? = nil) {
+        self.id = id
+        self.title = title
+        self.passed = passed
+        self.date = date
+        self.count = count
+        wrong = count
+    }
+}
+
