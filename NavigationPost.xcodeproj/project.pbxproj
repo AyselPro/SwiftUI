@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F911C5162B9F7FAD00FD5594 /* LinkToAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F911C5152B9F7FAD00FD5594 /* LinkToAppView.swift */; };
 		F91E522E2B9902E6002DD16D /* NavigationPostApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91E522D2B9902E6002DD16D /* NavigationPostApp.swift */; };
 		F91E52302B9902E6002DD16D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91E522F2B9902E6002DD16D /* ContentView.swift */; };
 		F91E52322B9902E8002DD16D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91E52312B9902E8002DD16D /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F911C5152B9F7FAD00FD5594 /* LinkToAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkToAppView.swift; sourceTree = "<group>"; };
 		F91E522A2B9902E6002DD16D /* NavigationPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F91E522D2B9902E6002DD16D /* NavigationPostApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPostApp.swift; sourceTree = "<group>"; };
 		F91E522F2B9902E6002DD16D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				F91E525A2B9B010C002DD16D /* DataController.swift */,
 				F91E525C2B9B013F002DD16D /* CoursePart.swift */,
 				F91E525E2B9B016A002DD16D /* CourseCell.swift */,
+				F911C5152B9F7FAD00FD5594 /* LinkToAppView.swift */,
 				F91E52312B9902E8002DD16D /* Assets.xcassets */,
 				F91E52332B9902E8002DD16D /* Preview Content */,
 			);
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F911C5162B9F7FAD00FD5594 /* LinkToAppView.swift in Sources */,
 				F91E52612B9B02A9002DD16D /* AppInStore.swift in Sources */,
 				F91E524F2B9AFBD5002DD16D /* HelloView.swift in Sources */,
 				F91E52592B9B004E002DD16D /* ImageStyler.swift in Sources */,

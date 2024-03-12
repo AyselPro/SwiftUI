@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SettingsView: View {
+    
+    @Binding var titleOn: Bool
+    
     // read actual color scheme from the environment
     @Environment(\.colorScheme) var colorScheme
     @Environment(ColorTheme.self) private var theme
@@ -20,7 +23,7 @@ struct SettingsView: View {
         Form {
             Section {
                 // show one of two links to apps in the AppStore
-                Toggle("Show a secret link", isOn: $linkOn.animation())
+                Toggle("Navigation title enabled", isOn: $linkOn.animation())
                     .onChange(of: linkOn) {
                         if linkOn {
                             // toogle between two links for every set on
@@ -29,13 +32,12 @@ struct SettingsView: View {
                     }
                 
                 if linkOn {
-                   // LinkToAppView(toggled: toggler)
+                    LinkToAppView(toggled: toggler)
                 }
             }
-            
             Section {
                 // presents current light / dark mode in iOS, connected dynamically
-                Text("Color theme appearance: ") +
+                Text("Dark Theme enabled: ") +
                 Text("\(colorScheme == .dark ? "dark mode" : "light mode")").bold()
                 
                 Picker("Color theme", selection: $selectedTheme.animation()) {
@@ -58,6 +60,7 @@ struct SettingsView: View {
 }
 
 #Preview {
-    SettingsView()
+    SettingsView(titleOn: .constant(true))
         .environment(ColorTheme())
 }
+

@@ -12,7 +12,7 @@ import SwiftData
 struct NavigationPostApp: App {
     var body: some Scene {
         WindowGroup {
-            InfoView()
+           AppStateView()
         }
         .modelContainer(DataController.container())
     }

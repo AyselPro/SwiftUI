@@ -9,28 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State private var titleOn = false
+    
     var body: some View {
         // tab bar with view items
         TabView() {
-            InfoView()
-                .tabItem {
-                    Label("SwiftUI", systemImage: "swift")
-                }
-            
-            HelloView()
-                .tabItem {
-                    Label("Hello world", systemImage: "pencil.tip")
-                }
-            
-            SettingsView()
-                .tabItem {
-                    Label("Settings", systemImage: "menucard")
-                }
+            if titleOn {
+                InfoView()
+                    .tabItem {
+                        Label("SwiftUI", systemImage: "swift")
+                    }
+                
+            } else {
+                HelloView()
+                    .tabItem {
+                        Label("Hello world", systemImage: "pencil.tip")
+                    }
+                
+                SettingsView(titleOn: $titleOn)
+                    .tabItem {
+                        Label("Settings", systemImage: "menucard")
+                    }
+            }
         }
     }
-}
-
-#Preview {
-    ContentView()
-        .environment(ColorTheme())
+    //
+    //    #Preview {
+    //        ContentView()
+    //            .environment(ColorTheme())
+    //    }
 }
