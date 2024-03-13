@@ -29,14 +29,14 @@ struct AppStateView: View {
                 }
             }
             .pickerStyle(.wheel)
-
+            
         case .fullDemo:
             ContentView()
                 .preferredColorScheme(colorTheme.theme)
                 .environment(colorTheme)
             
         case .session1:
-            InfoView()
+            InfoView(titleOn: .constant(true))
         }
     }
 }

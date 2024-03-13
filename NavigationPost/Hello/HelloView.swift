@@ -11,7 +11,6 @@ import SwiftData
 struct HelloView: View {
     
     var body: some View {
-        //        Button(action: processAction) {
         HStack {
             Image(systemName: "chart.bar.xaxis")
             Text("Hello world")
@@ -19,11 +18,8 @@ struct HelloView: View {
     }
 }
 
-
-
 #Preview {
     let container = DataController.container(inMemory: true)
-    
     return HelloView()
         .modelContainer(container)
 }

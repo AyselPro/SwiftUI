@@ -26,6 +26,8 @@
 		F91E525D2B9B013F002DD16D /* CoursePart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91E525C2B9B013F002DD16D /* CoursePart.swift */; };
 		F91E525F2B9B016A002DD16D /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91E525E2B9B016A002DD16D /* CourseCell.swift */; };
 		F91E52612B9B02A9002DD16D /* AppInStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91E52602B9B02A9002DD16D /* AppInStore.swift */; };
+		F99B58E32BA099BE007AF3B0 /* UIKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B58E22BA099BE007AF3B0 /* UIKitView.swift */; };
+		F99B58E52BA09A0F007AF3B0 /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B58E42BA09A0F007AF3B0 /* AttributedString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		F91E525C2B9B013F002DD16D /* CoursePart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursePart.swift; sourceTree = "<group>"; };
 		F91E525E2B9B016A002DD16D /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		F91E52602B9B02A9002DD16D /* AppInStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInStore.swift; sourceTree = "<group>"; };
+		F99B58E22BA099BE007AF3B0 /* UIKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitView.swift; sourceTree = "<group>"; };
+		F99B58E42BA09A0F007AF3B0 /* AttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		F91E522C2B9902E6002DD16D /* NavigationPost */ = {
 			isa = PBXGroup;
 			children = (
+				F99B58E12BA099A8007AF3B0 /* Session 3 */,
 				F91E52512B9AFD5D002DD16D /* Settings */,
 				F91E52502B9AFCD4002DD16D /* Hello */,
 				F91E52492B990A9F002DD16D /* Session2 */,
@@ -142,6 +147,15 @@
 				F91E52602B9B02A9002DD16D /* AppInStore.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		F99B58E12BA099A8007AF3B0 /* Session 3 */ = {
+			isa = PBXGroup;
+			children = (
+				F99B58E22BA099BE007AF3B0 /* UIKitView.swift */,
+				F99B58E42BA09A0F007AF3B0 /* AttributedString.swift */,
+			);
+			path = "Session 3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +232,7 @@
 				F91E52612B9B02A9002DD16D /* AppInStore.swift in Sources */,
 				F91E524F2B9AFBD5002DD16D /* HelloView.swift in Sources */,
 				F91E52592B9B004E002DD16D /* ImageStyler.swift in Sources */,
+				F99B58E52BA09A0F007AF3B0 /* AttributedString.swift in Sources */,
 				F91E523D2B990326002DD16D /* Post.swift in Sources */,
 				F91E52302B9902E6002DD16D /* ContentView.swift in Sources */,
 				F91E524B2B990AAE002DD16D /* AppStateView.swift in Sources */,
@@ -229,6 +244,7 @@
 				F91E522E2B9902E6002DD16D /* NavigationPostApp.swift in Sources */,
 				F91E525F2B9B016A002DD16D /* CourseCell.swift in Sources */,
 				F91E524D2B990ABD002DD16D /* ColorTheme.swift in Sources */,
+				F99B58E32BA099BE007AF3B0 /* UIKitView.swift in Sources */,
 				F91E52432B9908A0002DD16D /* InfoView.swift in Sources */,
 				F91E52412B990853002DD16D /* InfoRowView.swift in Sources */,
 			);

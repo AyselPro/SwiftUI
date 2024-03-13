@@ -15,7 +15,7 @@ struct ContentView: View {
         // tab bar with view items
         TabView() {
             if titleOn {
-                InfoView()
+                InfoView(titleOn: $titleOn)
                     .tabItem {
                         Label("SwiftUI", systemImage: "swift")
                     }
@@ -33,9 +33,10 @@ struct ContentView: View {
             }
         }
     }
-    //
-    //    #Preview {
-    //        ContentView()
-    //            .environment(ColorTheme())
-    //    }
 }
+
+#Preview {
+    ContentView()
+        .environment(ColorTheme())
+}
+
