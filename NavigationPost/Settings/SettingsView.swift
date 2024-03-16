@@ -15,24 +15,15 @@ struct SettingsView: View {
     @Environment(\.colorScheme) var colorScheme
     @Environment(ColorTheme.self) private var theme
     @State private var selectedTheme = ColorTheme.Theme.default
-    
-    @AppStorage("linkToAppOn") private var linkOn = false
-    @State private var toggler = true
-    
+
     var body: some View {
         Form {
             Section {
-                // show one of two links to apps in the AppStore
-                Toggle("Navigation title enabled", isOn: $linkOn.animation())
-                    .onChange(of: linkOn) {
-                        if linkOn {
-                            // toogle between two links for every set on
-                            toggler.toggle()
-                        }
-                    }
-                
-                if linkOn {
-                    LinkToAppView(toggled: toggler)
+                Toggle("Navigation title", isOn: $titleOn.animation())
+                if titleOn {
+                    Text("Navigation title is enabled")
+                        .foregroundStyle(.secondary)
+                        .font(.subheadline)
                 }
             }
             Section {
